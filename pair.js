@@ -38,19 +38,19 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/ELDROCiWFCK8TcGwz8gCrK?mode=ac_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/D2W52jAfL4iBeSnEfQzSLZ?mode=ems_copy_t',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://i.ibb.co/0jdP8RP0/e5a4a7af6fe90ad5.jpg',
+    IMAGE_PATH: 'https://i.ibb.co/SDBYFyDh/9272.jpg',
     NEWSLETTER_JID: '120363420907749813@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     NEWS_JSON_URL: '',
-    BOT_NAME: 'DSS-MINI',
-    OWNER_NAME: 'shanuka',
-    OWNER_NUMBER: '94785871303',
+    BOT_NAME: 'HELA-MINI',
+    OWNER_NAME: 'Cyber Froly & Jester Exe',
+    OWNER_NUMBER: '94743491027',
     BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © Dss MD',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6SfscD38CRvkITPL2G',
+    BOT_FOOTER: '> © Hᴇʟᴀ x MD',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbB61RR2phHLeBfkXq3q',
     BUTTON_IMAGES: {
         ALIVE: 'https://i.ibb.co/0jdP8RP0/e5a4a7af6fe90ad5.jpg',
         MENU: 'https://i.ibb.co/0jdP8RP0/e5a4a7af6fe90ad5.jpg',
@@ -388,7 +388,7 @@ async function SendSlide(socket, jid, newsItems) {
             imgBuffer = await resize(item.thumbnail, 300, 200);
         } catch (error) {
             console.error(`Failed to resize image for ${item.title}:`, error);
-            imgBuffer = await Jimp.read('https://i.ibb.co/PJvjMx9/20250717-093632.jpg');
+            imgBuffer = await Jimp.read('https://i.ibb.co/SDBYFyDh/9272.jpg');
             imgBuffer = await imgBuffer.resize(300, 200).getBufferAsync(Jimp.MIME_JPEG);
         }
         let imgsc = await prepareWAMessageMedia({ image: imgBuffer }, { upload: socket.waUploadToServer });
@@ -487,9 +487,9 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*ᴅꜱꜱ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ɴᴏᴡ*';
-                    const content = `*© ᴘᴏᴡᴇʀᴅ ʙʏ ᴅꜱꜱ ᴍᴅ\n` +                                   `*ʙᴏᴛ ᴏᴡɴᴇʀ :- ꜱʜᴀɴᴜᴋᴀ ꜱʜᴀᴍᴇᴇɴ*\n` +
-                                   `*ᴏᴡᴇɴʀ ɴᴜᴍʙᴇʀ :- 94785871303.\n` +
+                    const title = '*ʜᴇʟᴀ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ɴᴏᴡ*';
+                    const content = `*© ᴘᴏᴡᴇʀᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅᵀᴹ\n` +                                   `*ʙᴏᴛ ᴏᴡɴᴇʀ :- ᴄʏʙᴇʀ ꜰʀᴏʟʏ & ᴊᴇꜱᴛᴇʀ ᴇxᴇ*\n` +
+                                   `*ᴏᴡᴇɴʀ ɴᴜᴍʙᴇʀ :- 94743491027,94775877546.\n` +
                                    `*ᴍɪɴɪ ꜱɪᴛᴇ*\n` +
                                    `> ᴄᴏᴍɪɴɢ_ꜱᴏᴏɴ`;
                     const footer = config.BOT_FOOTER;
@@ -575,9 +575,9 @@ case 'alive': {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '*ᴅꜱꜱ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ɴᴏᴡ*';
-                    const content = `*© ᴘᴏᴡᴇʀᴅ ʙʏ ᴅꜱꜱ ᴍᴅ\n` +                                   `*ʙᴏᴛ ᴏᴡɴᴇʀ :- ꜱʜᴀɴᴜᴋᴀ ꜱʜᴀᴍᴇᴇɴ*\n` +
-                                   `*ᴏᴡᴇɴʀ ɴᴜᴍʙᴇʀ :- 94785871303.\n` +
+                    const title = '*ʜᴇʟᴀ ᴍɪɴɪ ʙᴏᴛ ᴀʟɪᴠᴇ ɴᴏᴡ*';
+                    const content = `*© ᴘᴏᴡᴇʀᴅ ʙʏ ʜᴇʟᴀ x ᴍᴅᵀᴹ\n` +                                   `*ʙᴏᴛ ᴏᴡɴᴇʀ :- ᴄʏʙᴇʀ ꜰʀᴏʟʏ & ᴊᴇꜱᴛᴇʀ ᴇxᴇ*\n` +
+                                   `*ᴏᴡᴇɴʀ ɴᴜᴍʙᴇʀ :- 94743491027.\n` +
                                    `*ᴍɪɴɪ ꜱɪᴛᴇ*\n` +
                                    `> ᴄᴏᴍɪɴɢ_ꜱᴏᴏɴ`;
                     const footer = config.BOT_FOOTER;
@@ -617,16 +617,16 @@ case 'alive': {
                         + 'FN:SHALA OWNER\n'
                         + 'ORG:SHALA OWNER\n'
                         + 'TEL;type=CELL;type=VOICE;waid=94785871303:+94 72 438 96 99\n'
-                        + 'EMAIL:shalamd@gmail.com\n'
+                        + 'EMAIL:pjayasundara67@gmail.com\n'
                         + 'END:VCARD';
 
                     await socket.sendMessage(sender, {
                         contacts: {
-                            displayName: "SHALA OWNER",
+                            displayName: "HELA OWNER",
                             contacts: [{ vcard }]
                         },
                         image: { url: config.BUTTON_IMAGES.OWNER },
-                        caption: '*👑 DSS MD OWNER DETAILS*',
+                        caption: '*👑 HELA X MD OWNER DETAILS*',
                         buttons: [
                             { buttonId: `${config.PREFIX}menu`, buttonText: { displayText: '📋 MENU' }, type: 1 },
                             { buttonId: `${config.PREFIX}alive`, buttonText: { displayText: '🤖 BOT INFO' }, type: 1 }
@@ -643,7 +643,7 @@ case 'alive': {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
                         
-                    const title = '*👨‍💻DSS MIMI BOT SYSTEM 👨‍💻*';
+                    const title = '*👨‍💻HELA MINI BOT SYSTEM 👨‍💻*';
                     const content = `┏━━━━━━━━━━━━━━━━\n` +
                         `┃🤖 \`ʙᴏᴛ ɴᴀᴍᴇ\` : ${config.BOT_NAME}\n` +
                         `┃🔖 \`ᴠᴇʀsɪᴏɴ\` : ${config.BOT_VERSION}\n` +
@@ -737,7 +737,7 @@ case 'alive': {
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*DAS SONG DOWNLOAD*';
+                        const titleText = '*HELA SONG DOWNLOAD*';
                         const content = `┏━━━━━━━━━━━━━━━━\n` +
                             `┃📝 \`Title\` : ${video.title}\n` +
                             `┃📈 \`Views\` : ${video.views}\n` +
